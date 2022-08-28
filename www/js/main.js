@@ -1,6 +1,6 @@
-const price = document.querySelector("#price");
-const priceOutput = document.querySelector("#price-output");
+const percent = document.querySelector("#percent");
+const percentOutput = document.querySelector("#percent-output");
 
-price.addEventListener("input", () => {
-   priceOutput.textContent = price.value;
+percent.addEventListener("input", () => {
+   percentOutput.textContent = percent.value;
 });
