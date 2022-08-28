@@ -2,3 +2,6 @@
   font-family: serif;
   color: blue;
 }
+label{
+   display: block;
+}
