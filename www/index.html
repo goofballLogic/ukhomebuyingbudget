@@ -2,37 +2,63 @@
 
 <html lang="en">
 
-  <head>
-
+<head>
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
     <title>UK Home Buying Budget</title>
-
     <link rel="stylesheet" href="css/main.css">
-
     <script defer src="js/main.js" type="module"></script>
-  </head>
+</head>
 
-  <body>
-     <form>
-         <label>
+<body>
+    <form>
+        <label>
             Pre-tax monthly income
-            <input name="pretax" type="number" />
-         </label>
-         <label>
-            Percentage toward mortgage
-            <input type="range" id="percent" name="percent" min="25" max="45" />
+            <input name="pretax" id="pretax" type="number" />
+        </label>
+        <label>
+            Percentage toward housing costs
+            <input type="range" id="percent" name="percent" min="25" max="45" value="25" />
             <output for="percent" id="percent-output"></output>
-         </label>
-         <label>
-            Amount toward mortgage
-            <input type="number" />
-         </label>
-     </form>
-	</body>
+        </label>
+        <label>
+            Amount reserved for insurance and taxes
+            <input name="amoRes" id="amoRes" type="number" /> PER ANNUM
+        </label>
+        <label>
+            Monthly budget
+            <input name="monbud" id="monbud" type="number" disabled />
+        </label>
+        <hr />
+        <label>
+            Years of mortgage
+            <input type="range" id="yearsMort" name="yearsMort" min="5" max="40" value="20" />
+            <output for="yearsMort" id="yearsMort-output"></output>
+        </label>
+        <label>
+            Mortgage interest
+            <input type="number" id="mortInt" name="mortInt" />
+        </label>
+        <label>
+            Mortgage amount
+            <input name="morAmo" id="morAmo" type="number" disabled />
+        </label>
+        <hr />
+        <label>
+            Down-payment
+            <input name="downpay" id="downpay" type="number" />
+        </label>
+        <label>
+            Minimum percentage down-payment
+            <input type="range" id="minDown" name="minDown" min="5" max="30" value="10" />
+            <output for="minDown" id="minDown-output"></output>
+        </label>
+        <label>
+            Home purchase amount
+            <input name="purAmo" id="purAmo" disabled />
+        </label>
+    </form>
+</body>
 
 </html>
